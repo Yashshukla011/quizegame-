@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import StartScreen from './Component/StartScreen';
-import OnlineMode from './Component/OnlineMode';
-import Local from './Component/Local';
+import StartScreen from './Components/StartScreen';
+import OnlineMode from './Components/OnlineMode';
+import Local from './Components/Local';
 
 function App() {
   const [screen, setScreen] = useState('start');
