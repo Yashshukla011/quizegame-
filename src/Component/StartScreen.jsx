@@ -12,7 +12,7 @@ const StartScreen = ({ onStartPvP, onStartSolo }) => {
           Imagin<span className="text-gray-500">XP</span>
         </h1>
         <p className="text-lg tracking-[0.5em] text-gray-400 mt-2 uppercase font-light">
-          Quiz Battle Arena
+          Quiz Battle 
         </p>
         <div className="flex items-center justify-center mt-6 gap-4">
           <div className="h-[1px] w-16 bg-gray-800"></div>
@@ -38,7 +38,7 @@ const StartScreen = ({ onStartPvP, onStartSolo }) => {
             <h2 className="text-4xl font-black tracking-widest uppercase mb-2">PvP Mode</h2>
             <p className="text-gray-400 text-xl mb-6">Battle 1v1 against another player</p>
             <div className="h-[1px] w-full bg-gray-800/50 mb-6"></div>
-            <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Each player gets their own questions</p>
+            <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Chalenge your Knowledge</p>
           </div>
         </button>
 
@@ -54,10 +54,10 @@ const StartScreen = ({ onStartPvP, onStartSolo }) => {
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-emerald-400 shadow-[0_0_20px_rgba(52,211,153,1)] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             
             <div className="text-6xl mb-4 group-hover:animate-bounce">🎯</div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-widest uppercase mb-2 text-gray-400 group-hover:text-white">Solo Mode</h2>
-            <p className="text-gray-400 text-xl mb-6">Challenge yourself and beat your score</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-widest uppercase mb-2 text-gray-400 group-hover:text-white">Offline Mode</h2>
+            <p className="text-gray-400 text-xl mb-6">For two Players</p>
             <div className="h-[1px] w-full bg-gray-800/50 mb-6"></div>
-            <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Beat your own high score</p>
+            <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Chalenge your Knowledge</p>
           </div>
         </button>
 
