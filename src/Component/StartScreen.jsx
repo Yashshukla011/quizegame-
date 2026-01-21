@@ -1,5 +1,6 @@
 import React from 'react';
 import onStartPvP from "./OnlineMode"
+import onStartSolo from "./Local"
 const StartScreen = ({ onStartPvP, onStartSolo }) => {
   return (
 
