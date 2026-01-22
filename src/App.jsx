@@ -2,7 +2,7 @@ import { useState } from 'react';
 import StartScreen from './Components/StartScreen';
 import OnlineMode from './Components/OnlineMode';
 import Local from './Components/Local';
-
+import MultiplePlayer from './Components/MultiplePlayer';
 function App() {
   const [screen, setScreen] = useState('start');
 
@@ -12,12 +12,15 @@ function App() {
         <StartScreen
           onStartPvP={() => setScreen('online')}
           onStartSolo={() => setScreen('pvp')}
-        />
+onStartMultiple={() => setScreen('multiplayer')}        />
       )}
 
       {screen === 'online' && <OnlineMode onBack={() => setScreen('start')} />}
       {screen === 'pvp' && <Local onBack={() => setScreen('start')} />}
-    </div>
+{screen === 'multiplayer' && (
+        <MultiplePlayer onBack={() => setScreen('start')} />
+      )}
+         </div>
   );
 }
 

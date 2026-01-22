@@ -1,7 +1,8 @@
 import React from 'react';
 import onStartPvP from "./OnlineMode"
 import onStartSolo from "./Local"
-const StartScreen = ({ onStartPvP, onStartSolo }) => {
+import onStartMultiple from "./MultiplePlayer"
+const StartScreen = ({ onStartPvP, onStartSolo,onStartMultiple }) => {
   return (
 
     <div className="min-h-screen w-full bg-[#0a0a0a] text-white font-sans flex flex-col items-center py-10 px-4 overflow-y-auto custom-scrollbar">
@@ -60,6 +61,24 @@ const StartScreen = ({ onStartPvP, onStartSolo }) => {
             <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Chalenge your Knowledge</p>
           </div>
         </button>
+
+ {/* <button 
+          onClick={onStartMultiple}
+          className="relative group w-full h-[280px] transition-all duration-300 active:scale-95 cursor-pointer"
+        >
+          <div className="absolute -inset-1 bg-emerald-500/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          
+          <div className="h-full relative bg-[#16181a] border border-gray-800 group-hover:border-emerald-500/50 rounded-2xl flex flex-col items-center justify-center p-10 transition-all duration-300">
+          
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-emerald-400 shadow-[0_0_20px_rgba(52,211,153,1)] rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            
+            <div className="text-6xl mb-4 group-hover:animate-bounce">🎯</div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-widest uppercase mb-2 text-gray-400 group-hover:text-white">Online Mode</h2>
+            <p className="text-gray-400 text-xl mb-6">For Multiple Player</p>
+            <div className="h-[1px] w-full bg-gray-800/50 mb-6"></div>
+            <p className="text-sm text-gray-500 tracking-[0.3em] uppercase font-bold">Chalenge your Knowledge</p>
+          </div>
+        </button> */}
 
       </div>
 
