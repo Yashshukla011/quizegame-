@@ -82,7 +82,6 @@ const StartScreen = ({ onStartPvP, onStartSolo,onStartMultiple }) => {
 
       </div>
 
-      {/* 3. Footer Stats - Ab ye scroll karne par niche dikhega */}
       <div className="grid grid-cols-3 gap-6 w-full max-w-3xl pb-10">
         <div className="bg-[#111] border border-gray-800/40 rounded-2xl py-8 text-center shadow-2xl">
           <span className="block text-4xl font-black text-white">50+</span>
