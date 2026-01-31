@@ -26,7 +26,7 @@ const Local = ({ onBack }) => {
   const [activePlayer, setActivePlayer] = useState(1);
   const [gameOver, setGameOver] = useState(false);
   
-  // New States for Names and Animations
+  
   const [names, setNames] = useState({ p1: '', p2: '' });
   const [isStarted, setIsStarted] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -76,7 +76,7 @@ const Local = ({ onBack }) => {
     }, 1000); // 1 second delay for visual feedback
   };
 
-  // --- NAME INPUT SCREEN ---
+  //  NAME INPUT SCREEN
   if (!isStarted) {
     return (
       <div className="h-screen bg-[#0a0a0a] flex items-center justify-center p-6 text-white font-sans">
